@@ -1,16 +1,15 @@
 package roman.common.util.bean;
 
-import ma.glasnost.orika.impl.AggregateFilter;
-import roman.common.util.bean.orika.annotation.ClassMap;
 import roman.common.util.bean.orika.annotation.OrigFieldMap;
 
 //@ClassMap(mapper = {UserToUserA.class, UserToUserA.class}, filter = AggregateFilter.class)
-public class User extends UserRole{
+public class UserRole {
 
     private Long id;
 
-    @OrigFieldMap(destClass = UserA.class, destField = "nameC")
     private String name;
+
+    private String age;
 
     public Long getId() {
         return id;
@@ -28,4 +27,11 @@ public class User extends UserRole{
         this.name = name;
     }
 
+    public String getAge() {
+        return age;
+    }
+
+    public void setAge(String age) {
+        this.age = age;
+    }
 }

@@ -15,5 +15,10 @@ public class BeanUtilsTest {
 
         UserA userA = BeanUtils.map(user, UserA.class);
         System.out.println(userA.toString());
+//        UserOther userOther = new UserOther();
+//        userOther.setId(111L);
+//        userOther.setName("张三");
+//        UserA userOtherA = BeanUtils.map(userOther, UserA.class);
+//        System.out.println(userOtherA.toString());
     }
 }

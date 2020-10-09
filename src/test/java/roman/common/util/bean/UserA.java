@@ -7,8 +7,9 @@ public class UserA {
 
     private Long id;
 
-    @DestFieldMaps({
-            @DestFieldMap(origClass = User.class,origField = "name")
+    @DestFieldMaps(value = {
+            @DestFieldMap(origClass = User.class,origField = "name"),
+			@DestFieldMap(origClass = UserOther.class,origField = "id")
     })
     private String nameA;
 

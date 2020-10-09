@@ -1,11 +1,9 @@
 package roman.common.util.bean;
 
-import ma.glasnost.orika.impl.AggregateFilter;
-import roman.common.util.bean.orika.annotation.ClassMap;
 import roman.common.util.bean.orika.annotation.OrigFieldMap;
 
 //@ClassMap(mapper = {UserToUserA.class, UserToUserA.class}, filter = AggregateFilter.class)
-public class User extends UserRole{
+public class UserOther {
 
     private Long id;
 

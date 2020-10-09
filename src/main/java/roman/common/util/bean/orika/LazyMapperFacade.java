@@ -83,8 +83,7 @@ public class LazyMapperFacade extends MapperFacadeImpl {
 		}
 	}
 
-	private Consumer<ClassField> initFieldMapper(
-			Map<String, ClassMapBuilder> classMapBuilders) {
+	private Consumer<ClassField> initFieldMapper(Map<String, ClassMapBuilder> classMapBuilders) {
 		return classField -> {
 			Field field = classField.getField();
 			Class clazz = classField.getClazz();
